@@ -20,3 +20,4 @@ Route::get('/', function()
 Route::get('/dashboard','HomeController@dashboard');
 Route::get('login', array('tamu.login', 'uses'=>'TamuController@login'));
 Route::post('authenticate', 'HomeController@authenticate');
+Route::get('logout', 'HomeController@logout');

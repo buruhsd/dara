@@ -35,5 +35,11 @@ class HomeController extends BaseController {
 		return Redirect::back();
 	}
 
-}
+	}
+
+	public function logout()
+	{
+		Sentry::logout();
+		return Redirect::to('login');
+	}
 }
