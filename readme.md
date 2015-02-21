@@ -23,3 +23,5 @@ password: admin
 user reguler: dara@fa.com
 password: reguler
 
+Jika anda ingin diskusi atau tanya-tanya tentang ini silahkan ke 
+ <a href="https://www.facebook.com/asdasddferw">FB</a> atau <a href="https://www.twitter.com/buruhsd">twitter</a>
