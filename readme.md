@@ -1,2 +1,25 @@
-Ini adalah project iseng iseng aja, biar gak kelihatan nganggur.
-Konsepnya sih sederhana, mau bikin web aplikasi situs cari kerja. Namanya juga selo gak tentu tiap hari saya commit. terima kasih
+## jobs seeker web app
+
+Adalah sebuah aplikasi web yang ditujukan untuk mempertemukan para pencari kerja dan para pencari pekerja. Dibangun menggunakan framework laravel 4.2.
+
+## Latar Belakang
+Mengingat jumlah pengangguran di indonesia semakin banyak dikarenakan jumlah sarjana tiap 6 bulan bertambah dan situs portal kerja cuman itu-itu aja, kami mencoba hadir menawarkan solusi yang mempermudah para pencari kerja untuk melamar kerjaan.
+
+##Latar Belakang Sebenarnya
+
+Ini cuman project iseng iseng kok, biar dilihat orang enggak nganggur.
+
+##fitur yang ingin di hadirkan
+
+	- Papperless on apply job (tidak perlu menulis surat lamaran, cukup klik udah jadi surat lamaran dan langsung kirim) => proses
+	- CV filter (memfilter CV pelamar yang tidak memenuhi syarat agar tidak tampil pada email perusahaan) => proses
+	- Fitur lain masih mikir jadi belum proses
+
+INFO:
+
+user admin: buruhsd@outlook.co.id
+password: admin
+
+user reguler: dara@fa.com
+password: reguler
+
