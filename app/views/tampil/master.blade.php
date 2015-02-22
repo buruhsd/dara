@@ -19,6 +19,7 @@
 				<div class="uk-navbar-brand uk-navbar-center uk-visible-small">Carikerja</div>
 			</nav>
 			<div class="uk-container-center uk-margin-top">
+				@include('tampil.partial.alert')
 				<ul class="uk-breadcumb">
 					@yield('breadcumb')
 				</ul>

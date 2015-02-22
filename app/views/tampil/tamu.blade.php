@@ -17,6 +17,7 @@
 				<div class="uk-navbar-brand uk-navbar-center uk-visible-small">CariKerja.co</div>
 			</nav>
 			<div class="uk-container-center uk-margin-top">
+				@include('tampil.partial.alert')
 				@yield('content')
 			</div>
 		</div>

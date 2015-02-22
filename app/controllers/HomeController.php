@@ -31,15 +31,18 @@ class HomeController extends BaseController {
 		$user=Sentry::authenticate($credentials,false);
 		
 		return Redirect::to('dashboard');
+	} catch (Cartalyst\Sentry\Users\WrongPasswordException $e) {
+		return Redirect::back()->with('errorMessage','Password Anda Salah.');
 	} catch (Exception $e) {
-		return Redirect::back();
-	}
+		return Redirect::back()->with('errorMessage',trans('Akun dengan email tersebut tidak terdaftar dalam sistem kami'));
+	} 
+
 
 	}
 
 	public function logout()
 	{
 		Sentry::logout();
-		return Redirect::to('login');
+		return Redirect::to('login')->with('successMessage','Anda Berhasil Logout');
 	}
 }
