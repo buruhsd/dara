@@ -50,7 +50,7 @@ class TamuController extends BaseController {
         });
 
         // Redirect ke halaman login
-        return Redirect::route('tamu.login')->with("successMessage", "Silahkan cek email Anda ($user->email) untuk melakukan aktivasi akun.");
+        return Redirect::back()->with('successMessage', "Silahkan cek email Anda ($user->email) untuk melakukan aktivasi akun.");
     }
 
 
@@ -63,12 +63,11 @@ class TamuController extends BaseController {
             $user = Sentry::findUserByLogin($email);
             $user->attemptActivation($activationCode);
         } catch (UserAlreadyActivatedException $e) {
-            return Redirect::route('tamu.login')->with('errorMessage', $e->getMessage());
+            return Redirect::route('tamu.index')->with('errorMessage', $e->getMessage());
         } catch (UserNotFoundException $e)  {
-            return Redirect::route('tamu.login')->with('errorMessage', $e->getMessage());
+            return Redirect::route('tamu.index')->with('errorMessage', $e->getMessage());
         }
 
-        return Redirect::route('tamu.login')
-            ->with('successMessage', 'Akun Anda berhasil diaktivasi, silahkan login.');
+        return Redirect::route('tamu.index')->with('successMessage', 'Akun Anda berhasil diaktivasi, silahkan login.');
     }
 }
