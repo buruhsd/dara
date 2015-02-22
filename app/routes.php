@@ -21,3 +21,6 @@ Route::get('/dashboard','HomeController@dashboard');
 Route::get('login', array('tamu.login', 'uses'=>'TamuController@login'));
 Route::post('authenticate', 'HomeController@authenticate');
 Route::get('logout', 'HomeController@logout');
+Route::get('signup', array('as'=>'home.signup', 'uses'=>'TamuController@signup'));
+Route::post('register', array('as'=>'tamu.register', 'uses'=>'TamuController@register'));
+Route::get('activate', array('as'=>'user.activate', 'uses'=>'TamuController@activate'));

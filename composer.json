@@ -8,7 +8,8 @@
 		"cartalyst/sentry": "2.1.*",
 		"uikit/uikit": "2.10.*",
 		"components/jquery": "2.1.*",
-		"way/generators": "2.6.*"
+		"way/generators": "2.6.*",
+		"greggilbert/recaptcha": "1.0.*"
 	},
 	"autoload": {
 		"classmap": [

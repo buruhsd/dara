@@ -1919,5 +1919,59 @@
         ],
         "description": "UIkit is a lightweight and modular front-end framework for developing fast and powerful web interfaces.",
         "homepage": "http://getuikit.com/"
+    },
+    {
+        "name": "greggilbert/recaptcha",
+        "version": "1.0.7",
+        "version_normalized": "1.0.7.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/greggilbert/recaptcha.git",
+            "reference": "677cd306027d29327dde5b6b9d58e9adc3e14f35"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/greggilbert/recaptcha/zipball/677cd306027d29327dde5b6b9d58e9adc3e14f35",
+            "reference": "677cd306027d29327dde5b6b9d58e9adc3e14f35",
+            "shasum": ""
+        },
+        "require": {
+            "illuminate/support": "*",
+            "php": ">=5.3.0"
+        },
+        "time": "2014-03-04 04:12:02",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "1.0.x-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "classmap": [
+                "src/migrations"
+            ],
+            "psr-0": {
+                "Greggilbert\\Recaptcha": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Greg Gilbert",
+                "email": "greg@greg-gilbert.com"
+            }
+        ],
+        "description": "reCAPTCHA Validator for Laravel 4",
+        "homepage": "http://github.com/greggilbert/recaptcha",
+        "keywords": [
+            "captcha",
+            "laravel",
+            "laravel4",
+            "recaptcha"
+        ]
     }
 ]
