@@ -23,5 +23,12 @@ password: admin
 user reguler: dara@fa.com
 password: reguler
 
+agar bisa mengirim email silahkan edit file mail.php di folder app/config/mail.php lalu isi username dan password dengan email yang ingin diisikan. 
+
+#perkembangan sistem
+	-login-logout (sukses)
+	-signup (sukses tapi terkadang ada bug di routenya)
+	-Activasi via email (sukses tapi masih ada bug di routenya)
+
 Jika anda ingin diskusi atau tanya-tanya tentang ini silahkan ke 
  <a href="https://www.facebook.com/asdasddferw">FB</a> atau <a href="https://www.twitter.com/buruhsd">twitter</a>
