@@ -17,7 +17,17 @@ class HomeController extends BaseController {
 	protected $layout='tampil.master';
 	public function dashboard()
 	{
-		$this->layout->content=View::make('dashboard.index')->withTitle('Dashboard');
+		$user=Sentry::getUser();
+		$admin=Sentry::findGroupByName('admin');
+		$reguler=Sentry::findGroupByName('reguler');
+	if ($user->inGroup($admin)) {
+		$this->layout->content=View::make('dashboard.index')->withTitle('Dashboard');	
+	}
+
+	if ($user->inGroup($reguler)) {
+		$this->layout->content=View::make('dashboard.reguler')->withTitle('Dashboard');
+	}
+		
 	}
 
 	public function authenticate()

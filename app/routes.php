@@ -24,3 +24,7 @@ Route::get('logout', 'HomeController@logout');
 Route::get('signup', array('as'=>'home.signup', 'uses'=>'TamuController@signup'));
 Route::post('register', array('as'=>'tamu.register', 'uses'=>'TamuController@register'));
 Route::get('activate', array('as'=>'user.activate', 'uses'=>'TamuController@activate'));
+
+Route::group(array('before'=>'auth'),function() {
+	Route::get('profil',array('as'=>'member.profil','uses'=>'MemberController@profil'));
+});
