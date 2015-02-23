@@ -4,7 +4,7 @@ class MemberController extends BaseController {
 
 public function __construct()
 {
-	$this->beforeFilter('regulerUser')
+	$this->beforeFilter('regulerUser');
 }
 public function profil()
 {

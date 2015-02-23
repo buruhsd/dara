@@ -10,7 +10,13 @@
 			<nav class="uk-navbar">
 				<a href="#" class="uk-navbar-brand uk-hidden-small">Carikerja</a>
 				<ul class="uk-navbar-nav uk-hidden-small">
-					@yield('nav')
+					@if (Sentry::getUser()->hasPermission('reguler'))
+                    @include('dashboard.navigasi.reguler')
+                @endif
+
+                @if (Sentry::getUser()->hasPermission('admin'))
+                    @include('dashboard.navigasi.admin')
+                @endif
 				</ul>
 				<div class="uk-navbar-flip uk-navbar-content">
 					<a href="#">{{Sentry::getUser()->first_name .' '. Sentry::getUser()->last_name}}</a>

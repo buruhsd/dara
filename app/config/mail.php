@@ -80,7 +80,7 @@ return array(
 	|
 	*/
 
-	'username' => 'isi sendiri',
+	'username' => 'sistemdarafa@gmail.com',
 
 	/*
 	|--------------------------------------------------------------------------
@@ -93,7 +93,7 @@ return array(
 	|
 	*/
 
-	'password' => 'isi sendiri',
+	'password' => 'buruh123',
 
 	/*
 	|--------------------------------------------------------------------------
